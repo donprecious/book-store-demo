@@ -1,0 +1,78 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0dfd7d5d_002Db7e2_002D4957_002Db4b3_002Da7c4f2ebe41c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanAnyGetBooks" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanAnyGetBooks&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e3605c1_002Dba1b_002D4d0b_002Db426_002D83bfebfdf1ee/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanReserveBook" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanReserveBook&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=213a1563_002Dc3d3_002D4096_002Db373_002Df53b035158c6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanAnyGetBooks #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanAnyGetBooks&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=232be2c3_002D8dc2_002D4c32_002D8001_002Dc8eb2b7becfc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanAnyGetBooks #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanAnyGetBooks&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=36e15252_002D2c13_002D410b_002Db0d5_002D2b5522e5f3d4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3f4ab1b5_002D54de_002D4de3_002Dbe03_002Dc381054579c1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #8" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41d8233d_002D1a69_002D445d_002Dbe2b_002D07ccd88d193f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CanReserveBook #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanReserveBook&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A39593C4-7611-4502-ABB9-5B292C9FEDA5::net6.0::BookStore.UnitTest.LibraryServiceTest.CanGetBooks&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A39593C4-7611-4502-ABB9-5B292C9FEDA5::net6.0::BookStore.UnitTest.LibraryServiceTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4fa23094_002D389e_002D4cb8_002Db57c_002Db9ce0dcdbb29/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5101fabf_002D5e46_002D4e1c_002Da767_002D097aee38700b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=82d1cf21_002D4515_002D4dc0_002Daa41_002D4425775a9bae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ff7a006_002D8213_002D4691_002D8189_002D394d90dbfdd6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d3d180d7_002Da065_002D4436_002D81f4_002D9b1f1f4b209d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanAnyGetBooks #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanAnyGetBooks&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e1adb0a6_002Dd2f4_002D47ff_002D8f19_002Dc187ed7ce927/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ecb88320_002D6119_002D4bf9_002D9b0b_002D073576d2eb69/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f4693a3a_002D0a2f_002D43b2_002D8870_002D943b94c7cc82/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanAnyGetBooks #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
