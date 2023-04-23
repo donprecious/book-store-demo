@@ -12,8 +12,8 @@ public class RequestBookWhenAvaliableCommand: IRequest<Result>
 
 public class RequestBookWhenAvaliableCommandHandler : IRequestHandler<RequestBookWhenAvaliableCommand,Result>
 {
+    
     private ILibraryService _libraryService;
-
     public RequestBookWhenAvaliableCommandHandler(ILibraryService libraryService)
     {
         _libraryService = libraryService;

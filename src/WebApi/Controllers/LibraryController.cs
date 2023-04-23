@@ -45,7 +45,7 @@ public class LibraryController : ApiControllerBase
     /// </summary>
     /// <param name="query"></param>
     /// <returns></returns>
-    [HttpGet("cancel-reservation")]
+    [HttpPost("cancel-reservation")]
     [SwaggerResponse(StatusCodes.Status200OK, type:  typeof(Result))]
     public async Task<IActionResult> CancelReservation([FromBody] CancelReserveCommand query)
     {
@@ -73,7 +73,7 @@ public class LibraryController : ApiControllerBase
     /// </summary>
     /// <param name="query"></param>
     /// <returns></returns>
-    [HttpGet("return")]
+    [HttpPost("return")]
     [SwaggerResponse(StatusCodes.Status200OK, type:  typeof(Result))]
     public async Task<IActionResult> BorrowBook([FromBody] ReturnBookCommand query)
     {
@@ -88,7 +88,7 @@ public class LibraryController : ApiControllerBase
     /// </summary>
     /// <param name="query"></param>
     /// <returns></returns>
-    [HttpGet("request-book")]
+    [HttpPost("request-book")]
     [SwaggerResponse(StatusCodes.Status200OK, type:  typeof(Result))]
     public async Task<IActionResult> RequestBookWhenAvaliable([FromBody] RequestBookWhenAvaliableCommand query)
     {

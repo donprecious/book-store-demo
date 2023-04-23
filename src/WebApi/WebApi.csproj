@@ -54,16 +54,10 @@
 
     <ItemGroup>
       <Content Remove="wwwroot\files\NewFile1.txt" />
-      <EmbeddedResource Include="EmailTemplate\VisaBookingSuccessConfirmation.html">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </EmbeddedResource>
       <EmbeddedResource Include="wwwroot\files\NewFile1.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </EmbeddedResource>
       <None Remove="EmailTemplate\VisaBookingConfirmation.html" />
-      <EmbeddedResource Include="EmailTemplate\VisaBookingConfirmation.html">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </EmbeddedResource>
     </ItemGroup>
 
 </Project>

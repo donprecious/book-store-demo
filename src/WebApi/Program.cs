@@ -80,20 +80,13 @@ builder.Services.AddApplicationInsightsTelemetry(a =>
 {
     a.ConnectionString = builder.Configuration.GetValue<string>("ApplicationInsights:ConnectionString");
 });
+
 builder.Services.AddSingleton<ITelemetryInitializer, ApplicationTelemetryInitializer>();
 builder.Services.AddLogging(builder =>
 {
 
     builder.AddFilter<ApplicationInsightsLoggerProvider>("", LogLevel.Trace);
     builder.AddFilter<ApplicationInsightsLoggerProvider>("Microsoft", LogLevel.Debug);
-});
-builder.Services.AddHttpLogging(logging =>
-{
-    logging.LoggingFields = HttpLoggingFields.All;
-    logging.RequestHeaders.Add("sec-ch-ua");
-    logging.RequestBodyLogLimit = 4096;
-    logging.ResponseBodyLogLimit = 4096;
-  
 });
 
 

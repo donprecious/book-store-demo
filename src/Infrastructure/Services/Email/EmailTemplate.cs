@@ -24,18 +24,11 @@ namespace Services.Email
 
         private  string  GetEmailContent(EmailTemplateNameEnum emailTemplateNameEnum)
         {
-                string result = "";
-                string template = _emailTemplateDic[emailTemplateNameEnum];
-                var assembly = Assembly.GetExecutingAssembly();
-                var resourceName = $"Core.Mail.EmailTemplates.{template}";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                     result = reader.ReadToEnd();
-                }
-                
-                return result; 
+               // todo write implementation to use various email template 
+               // just return an email string template  
+               var email = "Hello <br/>" +
+                           "{{content}}";
+               return email; 
                 
         }
 

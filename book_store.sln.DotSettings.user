@@ -34,6 +34,7 @@
     &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest.CanReserveBook&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::A39593C4-7611-4502-ABB9-5B292C9FEDA5::net6.0::BookStore.UnitTest.LibraryServiceTest.CanGetBooks&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::A39593C4-7611-4502-ABB9-5B292C9FEDA5::net6.0::BookStore.UnitTest.LibraryServiceTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::94FDB6AD-4085-44F2-9F2D-F33155292766::net6.0::BookStore.IntegrationTest.LibraryApiTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4fa23094_002D389e_002D4cb8_002Db57c_002Db9ce0dcdbb29/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LibraryApiTest #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;

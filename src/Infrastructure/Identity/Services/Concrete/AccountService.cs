@@ -14,12 +14,14 @@ using System.Text;
 using System.Threading.Tasks;
 using BookStore.Application.Account.Interface;
 using BookStore.Application.Account.Model;
+using BookStore.Application.Common.Interfaces;
 using BookStore.Application.Common.Models;
 using BookStore.Application.Email;
 using BookStore.Application.Email.Models;
 using BookStore.Application.Exceptions;
-
+using BookStore.Application.InMemoryEvent;
 using BookStore.Domain.Entities.ModelToDelete.IdentityModels;
+using BookStore.Domain.Events;
 using Identity.Contexts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -37,23 +39,24 @@ namespace Identity.Services.Concrete
         private readonly IEmailService _emailService;
         private IEmailTemplate _emailTemplate;
         private IConfiguration _configuration;
-        private IdentityContext _context;
+        private IDomainEventService _domainEventService;
         private ILogger<AccountService> _logger;
         public AccountService(UserManager<ApplicationUser> userManager,
             RoleManager<ApplicationRole> roleManager,
             IOptions<JWTSettings> jwtSettings,
             SignInManager<ApplicationUser> signInManager,
-            IEmailService emailService, IdentityContext context, IConfiguration configuration, ILogger<AccountService> logger, IEmailTemplate emailTemplate)
+            IEmailService emailService,  IConfiguration configuration, ILogger<AccountService> logger, IEmailTemplate emailTemplate,  IDomainEventService domainEventService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
             _jwtSettings = jwtSettings.Value;
             _emailService = emailService;
-            _context = context;
             _configuration = configuration;
             _logger = logger;
             _emailTemplate = emailTemplate;
+            _domainEventService = domainEventService;
+
         }
         public async Task<Result<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request)
         {
@@ -61,15 +64,12 @@ namespace Identity.Services.Concrete
             if (user == null)
             {
                 return Result<AuthenticationResponse>.Failure(new []{$"Invalid Credentials for '{request.Email}"} , $"Invalid Credentials for '{request.Email}");
-              
             }
             
             SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, request.Password, false, lockoutOnFailure: false);
             if (!signInResult.Succeeded)
             {
                 return Result<AuthenticationResponse>.Failure(new []{$"Invalid Credentials for '{request.Email}"} , $"Invalid Credentials for '{request.Email}");
-
-              
             }
 
          
@@ -240,7 +240,7 @@ namespace Identity.Services.Concrete
                 To = request.Email,
                 Subject = "Reset Password ",
             };
-            await _emailService.SendAsync(emailRequest);
+            // await _emailService.SendAsync(emailRequest);
             
         }
 
@@ -338,8 +338,8 @@ namespace Identity.Services.Concrete
 
                 //todo send otp 
                 // var verificationUri = await SendVerificationEmail(newUser, uri);
-                await SendEmailConfirmationOtp(request.Email, "123456");
-              
+              //  await SendEmailConfirmationOtp(request.Email, "123456");
+               await _domainEventService.DispatchAsync(new UserCreatedEvent(newUser));
                 return Result<string>.Success(newUser.Id.ToString(), message: $"User Registered. Kindly confirm your OTP");
             }
             else

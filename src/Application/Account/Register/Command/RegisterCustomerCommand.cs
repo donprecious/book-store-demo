@@ -7,11 +7,11 @@ namespace BookStore.Application.Account.Register.Command;
 
 public class RegisterCustomerCommand : IRequest<Result<string>>
 {
-    // public string FirstName { get; set; }
-    // public string LastName { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
 
     public string Email { get; set; }
-    // public string PhoneNumber { get; set; } 
+    public string PhoneNumber { get; set; } 
     public string Password { get; set; }
 }
 
@@ -31,10 +31,10 @@ public class RegisterCustomerCommandHandler : IRequestHandler<RegisterCustomerCo
             Email = request.Email,
             Password = request.Password,
             ConfirmPassword = request.Password,
-            FirstName = "",
-            LastName = "",
+            FirstName = request.FirstName,
+            LastName = request.LastName,
             UserName = request.Email,
-            PhoneNumber = ""
+            PhoneNumber = request.PhoneNumber
         });
 
      return result;

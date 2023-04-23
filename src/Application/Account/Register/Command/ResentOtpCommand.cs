@@ -21,6 +21,6 @@ public class ResentOtpCommandHandler : IRequestHandler< ResentOtpCommand,Result>
     public async Task<Result> Handle(ResentOtpCommand request, CancellationToken cancellationToken)
     {
         var result = await _accountService.SendEmailConfirmationOtp(request.Email, "123456"); 
-        return result;
+        return Result.Success();
     }
 }

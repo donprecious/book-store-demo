@@ -8,6 +8,7 @@ using BookStore.Application.Common.Models;
 using BookStore.Domain.Entities;
 using BookStore.Domain.Events;
 using BookStore.Domain.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Application.Library;
 
@@ -79,7 +80,9 @@ public class LibraryService : ILibraryService
 
     public async Task CancelReservationAsync(string reservationId, CancellationToken cancellationToken)
     {
-        var findReservation = await _reservationRepository.GetAsync(reservationId);
+        var findReservation = await _reservationRepository
+            .Get(a=>a.Id == reservationId )
+            .Include(a=>a.Book).FirstOrDefaultAsync();
         if (findReservation == null) throw new NotFoundException($"Reservation with {reservationId} not found");
 
         if (findReservation.IsCanceled) throw new BadRequestException("Reservation already canceled");
@@ -94,7 +97,9 @@ public class LibraryService : ILibraryService
 
     public async Task CancelReservationAsync(string bookId, string customerId, CancellationToken cancellationToken)
     {
-        var findReservation = await _reservationRepository.GetAsync(a=>a.BookId ==bookId && a.CustomerId == customerId && a.IsCanceled ==false );
+        var findReservation = await _reservationRepository
+            .Get(a=>a.BookId ==bookId && a.CustomerId == customerId && a.IsCanceled ==false )
+            .Include(a=>a.Book).FirstOrDefaultAsync();
         if (findReservation == null) throw new NotFoundException($"Reservation  not found");
 
         if (findReservation.IsCanceled) throw new BadRequestException("Reservation already canceled");
@@ -146,7 +151,12 @@ public class LibraryService : ILibraryService
 
     public async Task ReturnBookAsync(string bookId, string customerId, CancellationToken cancellationToken)
     {
-        var borrowedBook = await _borrowedBookRepository.GetAsync(a=>a.CustomerId == customerId && a.Bookid == bookId && a.IsReturned == false); 
+        var borrowedBook = await _borrowedBookRepository
+            .Get(a=>a.CustomerId == customerId && a.Bookid == bookId 
+                                               && a.IsReturned == false)
+            .Include(a=>a.Book)
+            .FirstOrDefaultAsync(cancellationToken)
+            ; 
         
         if (borrowedBook == null) throw new NotFoundException($"Record  not found");
 

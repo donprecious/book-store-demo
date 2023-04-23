@@ -10,7 +10,7 @@ public class CancelReserveCommand: IRequest<Result>
     public string CustomerId { get; set; }
 }
 
-public class CancelReserveCommandHandler : IRequestHandler<ReserveBookCommand,Result>
+public class CancelReserveCommandHandler : IRequestHandler<CancelReserveCommand,Result>
 {
     private ILibraryService _libraryService;
 
@@ -19,7 +19,7 @@ public class CancelReserveCommandHandler : IRequestHandler<ReserveBookCommand,Re
         _libraryService = libraryService;
     }
 
-    public async Task<Result> Handle(ReserveBookCommand request, CancellationToken cancellationToken)
+    public async Task<Result> Handle(CancelReserveCommand request, CancellationToken cancellationToken)
     {
         await _libraryService.CancelReservationAsync(request.BookId, request.CustomerId, cancellationToken); 
         return  Result.Success();

@@ -39,7 +39,7 @@ namespace Identity
                     b => b.MigrationsAssembly(typeof(IdentityContext).Assembly.FullName)))
               
                 ;
-            services.AddScoped<IdentityContext>(provider => provider.GetRequiredService<IdentityContext>());
+       
             services.AddScoped<IAccountService, AccountService>();
             
             services.AddIdentity<ApplicationUser, ApplicationRole>().AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders()

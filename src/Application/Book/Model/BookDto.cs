@@ -1,8 +1,9 @@
 using AutoMapper;
+using BookStore.Application.Common.Models;
 
 namespace BookStore.Application.Book.Model;
 
-public class GetBookDto
+public class GetBookDto:BaseEntityDto
 {
     public string Title { get; set; }
     public string ISBN { get; set; }

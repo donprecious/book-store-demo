@@ -22,7 +22,7 @@ namespace WebApi.Filters
                 { typeof(NotFoundException), HandleNotFoundException },
                 { typeof(UnauthorizedAccessException), HandleUnauthorizedAccessException },
                 { typeof(ForbiddenAccessException), HandleForbiddenAccessException },
-                { typeof(BadRequestException), HandleForbiddenAccessException },
+                { typeof(BadRequestException), HandleBadRequestException },
             };
         }
 
