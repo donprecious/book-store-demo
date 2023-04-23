@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.EntityFramework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity", "src\Infrastructure\Identity\Identity.csproj", "{67B5CB77-399B-4FBE-9886-88ABE46BAA8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.IntegrationTest", "BookStore.IntegrationTest\BookStore.IntegrationTest.csproj", "{94FDB6AD-4085-44F2-9F2D-F33155292766}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.IntegrationTest", "src\tests\BookStore.IntegrationTest\BookStore.IntegrationTest.csproj", "{94FDB6AD-4085-44F2-9F2D-F33155292766}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.UnitTest", "src\tests\BookStore.UnitTest\BookStore.UnitTest.csproj", "{A39593C4-7611-4502-ABB9-5B292C9FEDA5}"
 EndProject
